@@ -1,0 +1,12 @@
+*.log
+.DS_Store
+node_modules
+dist
+.idea
+coverage
+.env
+*.tfvars
+tf/.terraform
+*.tfstate
+*.tfstate.backup
+.terraform/
