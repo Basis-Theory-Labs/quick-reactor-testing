@@ -1,0 +1,13 @@
+{
+  "name": "reactor-node22",
+  "version": "1.0.0",
+  "description": "node22 Reactor: HMAC-SHA256 using the non-curated js-sha256 dependency",
+  "main": "reactor.js",
+  "license": "MIT",
+  "dependencies": {
+    "js-sha256": "0.11.1"
+  },
+  "engines": {
+    "node": "^22"
+  }
+}

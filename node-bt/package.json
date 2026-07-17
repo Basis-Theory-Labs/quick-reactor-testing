@@ -1,0 +1,13 @@
+{
+  "name": "reactor-node-bt",
+  "version": "1.0.0",
+  "description": "node-bt Reactor: HMAC-SHA256 using the curated crypto-js dependency",
+  "main": "reactor.js",
+  "license": "MIT",
+  "dependencies": {
+    "crypto-js": "^4.2.0"
+  },
+  "engines": {
+    "node": "^16"
+  }
+}
