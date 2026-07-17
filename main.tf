@@ -2,13 +2,20 @@ terraform {
   required_providers {
     basistheory = {
       source  = "basis-theory/basistheory"
-      version = ">= 2.0.0"
+      version = "~> 5.2"
     }
   }
 }
 
-variable "BT_API_URL" {}
-variable "BT_MANAGEMENT_API_KEY" {}
+variable "BT_API_URL" {
+  description = "Basis Theory API base URL. Defaults to the Test Tenant environment."
+  default     = "https://api.test.basistheory.com"
+}
+
+variable "BT_MANAGEMENT_API_KEY" {
+  description = "Management API key from your Test Tenant (contains _test_)."
+  sensitive   = true
+}
 
 provider "basistheory" {
   api_url = var.BT_API_URL
